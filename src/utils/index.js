@@ -2,10 +2,9 @@
 /* eslint-disable camelcase */
 /* eslint-disable consistent-return */
 
-const playlists = ({ id, name, username }) => ({
+const playlists = ({ id, name }) => ({
   id,
   name,
-  username,
 });
 
 const songs = ({ song_id, title, performer }) => ({
