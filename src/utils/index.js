@@ -17,8 +17,10 @@ const playlistSongsStructure = (playlistsSongs) => {
   const playlist = playlistsSongs.map(playlists);
   const song = playlistsSongs.map(songs).filter(uniqueValueSongTitle);
   return {
-    ...playlist[0],
-    songs: song,
+    playlist: {
+      ...playlist[0],
+      songs: song,
+    },
   };
 };
 
